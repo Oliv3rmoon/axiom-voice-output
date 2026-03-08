@@ -7,7 +7,7 @@ app.use(express.json({ limit: '10mb' }));
 
 const ELEVENLABS_KEY = process.env.ELEVENLABS_API_KEY || '';
 const VOICE_ID = process.env.ELEVENLABS_VOICE_ID || '4tRn1lSkEn13EVTuqb0g'; // Serafina
-const MODEL_ID = process.env.ELEVENLABS_MODEL || 'eleven_multilingual_v2';
+const MODEL_ID = process.env.ELEVENLABS_MODEL || 'eleven_v3';
 
 // Generate speech from text — returns base64 audio
 app.post('/speak', async (req, res) => {
